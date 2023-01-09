@@ -14,4 +14,4 @@ COPY --from=builder ${GOPATH:-/go}/bin/temporalite /
 EXPOSE 7233
 EXPOSE 8233
 
-ENTRYPOINT ["/temporalite", "start", "--ephemeral", "-n", "default", "--ip" , "0.0.0.0"]
+ENTRYPOINT ["/temporalite", "start", "-n", "default", "--ip" , "0.0.0.0"]
